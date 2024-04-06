@@ -1,4 +1,5 @@
 import { NAV_LINKS } from '@/constants'
+import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
@@ -14,12 +15,17 @@ const Navbar = () => {
             NAV_LINKS.map((link) => (
               <Link href={link.href} key={link.key} className='flexCenter text-[15px] font-[500] text-black hover:bg-blue-500 hover:text-white px-4 py-1 rounded-full cursor-pointer transition-all duration-300'>
                 {link.label}
-
               </Link>
             ))
           }
-
         </ul>
+        <Image
+          src='menu.svg'
+          alt='menu'
+          width={28}
+          height={28}
+          className='inline-block cursor-pointer lg:hidden'
+        />
       </div>
       navbar
     </nav>
