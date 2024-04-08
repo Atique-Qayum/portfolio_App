@@ -2,3 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Inter;
+}
+.linearGradient {
+    background: linear-gradient(97deg, #4066ff 4%, #2949c6 100%);
+}
+
+@layer utilities {
+    .bts_white_ground {
+        @apply border-white bg-white px-6 py-3 text-gray-90
+    }

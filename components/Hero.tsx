@@ -51,8 +51,12 @@ const Hero = () => {
           <p className='bold-18 lg:bold-20'>1100+ <span className='regular-16 lg:regular-20'>Exellent Reviews</span></p>
         </div>
         <div className='flexstart gap-1 pt-6'>
-          <button/>
-
+          <button
+          type="button"
+          title="download CV"
+          icon="/download.svg"
+          variant="btn_dark_round"
+          />
         </div>
       </div>
     </section>
