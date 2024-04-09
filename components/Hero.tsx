@@ -3,6 +3,9 @@
 import Image from 'next/image'
 import React from 'react'
 import { Typewriter } from 'react-simple-typewriter'
+import Button from './Button'
+
+
 
 
 const Hero = () => {
@@ -38,7 +41,7 @@ const Hero = () => {
           <div className='flex items-center gap-2'>
             {
               Array(1).fill(1).map((_, index) => (
-                <Image 
+                <Image
                   src="/star.jpg"
                   key={index}
                   alt='star'
@@ -51,11 +54,11 @@ const Hero = () => {
           <p className='bold-18 lg:bold-20'>1100+ <span className='regular-16 lg:regular-20'>Exellent Reviews</span></p>
         </div>
         <div className='flexstart gap-1 pt-6'>
-          <button
-          type="button"
-          title="download CV"
-          icon="/download.svg"
-          variant="btn_dark_round"
+          <Button
+            type="button"
+            title="download CV"
+            icon="/download.svg"
+            variant="btn_dark_round"
           />
         </div>
       </div>
